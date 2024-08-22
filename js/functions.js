@@ -13,9 +13,9 @@ function isPalindrome(word) {                                                   
 
 // funzione per controllare se un dato numero è pari o meno
 
-function isEven(num) {                         // 1 solo parametro, che sarà il futuro numero
-    let even = num % 2 === 0 ? true : false;   // verifico il resto della divisione per 2 per decretare se è pari, e affido un Booleano al risultato
-    return even;                               // ritorno il risultato(Booleano) a chi mi invoca
+function isEven(num) {                           // 1 solo parametro, che sarà il futuro numero
+    const even = num % 2 === 0 ? true : false;   // verifico il resto della divisione per 2 per decretare se è pari, e affido un Booleano al risultato
+    return even;                                 // ritorno il risultato(Booleano) a chi mi invoca
 }
 
 

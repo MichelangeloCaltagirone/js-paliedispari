@@ -43,16 +43,42 @@ const button = document.querySelector('button').addEventListener('click', functi
     form.reset();  // Pulisco i campi del form
 })
 
-const even = isEven(8);
-console.log(even);
-console.log(isEven(9));
-num1 = randomNum(1, 5);
-console.log(num1);
-num2 = randomNum(1, 5);
-console.log(num2);
 
 
 
 
 // Es2 Pari o Dispari contro il PC
+// Versione Console
+
+/**
+ * chiedo all'utente se punta su pari o dispari
+ * chiedo all'utente il numero che sceglie tra 1 e 5
+ * genero il numero per il pc
+ * sommo i 2 numeri
+ * verifico chi ha vinto
+ * stampo il vincitore
+ */
+
+// Prep
+const pcNum = randomNum(1, 5);    // l'unico dato che posso sapere già a monte
+
+// recupero dati da utente
+const userChoice = prompt('Vuoi puntare su Pari o su Dispari?').trim().toLowerCase();  // scelta utente
+const userNum = parseInt(prompt('Inserisci un numero tra 1 e 5'));                     // numero utente
+// Mostro in console i dati generati
+console.log(userChoice,' :punatata utente');
+console.log(userNum, " :numero scelto dall'utente");
+console.log(pcNum, ' :numero scelto dal PC');
+
+// Elaborazione dati
+
+const sum = pcNum + userNum;              // Calcolo la somma
+const even = isEven(sum);                 // Passo sum come argomento della funzione per controllare che sia pari o dispari
+
+console.log('la somma è: ', sum);
+
+// Fase di produzione output mediante un controllo di due variabili: la scelta dell'utente e il valore di ritorno della funzione isEven
+
+if ((even && userChoice === 'pari') || (!even && userChoice === 'dispari')) console.log('Hai vinto tu, complimenti!');
+else console.log('Ha vinto il PC. Non sei stato fortunato');
 
