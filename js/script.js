@@ -24,12 +24,21 @@ const button = document.querySelector('button').addEventListener('click', functi
 
     const word = inputTextField.value.toLowerCase().trim();    // al click recupero dal DOM il dato di interesse, preparandolo con dei metodi
 
+    console.log(word);                                         // mostro in console la parola inserita dall'utente
+    
+
     // Fase di elaborazione dati
     // ternario per stampare in pagina. Passando la parola come argomento della funzione,
     // essa restituisce vero o falso, utili poi a stampare il messaggio corretto in pagina.
 
-    if(isPalindrome(word)) result.innerText = 'Complimenti! Hai trovato una parola palindroma';  
-    else result.innerText = "La parola inserita non è palindroma, provane un'altra";
+    if(isPalindrome(word)) {
+        result.innerText = 'Complimenti! Hai trovato una parola palindroma';        // Mostro risultato in: pagina
+        console.log('Complimenti! Hai trovato una parola palindroma');              // Mostro risultato in: console 
+    }     
+    else {
+        result.innerText = "La parola inserita non è palindroma, provane un'altra"; // Mostro risultato in: pagina  
+        console.log("La parola inserita non è palindroma, provane un'altra");       // Mostro risultato in: console
+    }
     
     form.reset();  // Pulisco i campi del form
 })
