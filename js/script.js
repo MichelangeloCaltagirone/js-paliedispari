@@ -42,3 +42,17 @@ const button = document.querySelector('button').addEventListener('click', functi
     
     form.reset();  // Pulisco i campi del form
 })
+
+const even = isEven(8);
+console.log(even);
+console.log(isEven(9));
+num1 = randomNum(1, 5);
+console.log(num1);
+num2 = randomNum(1, 5);
+console.log(num2);
+
+
+
+
+// Es2 Pari o Dispari contro il PC
+
