@@ -21,7 +21,8 @@
     <h1>Pari o Dispari</h1>
     <form id="formEs2">
         <input id="txtInputEs2" type="text" placeholder="Indica la tua puntata">
-        <input id="userNumb" type="number" placeholder="inserisci numero da 1 a 5">
+        <label for="userNumb">Inserisci un numero da 1 a 5</label>
+        <input id="userNumb" name="userNumb" type="number" min="1" max="5">        
         <button id="btnEs2" type="submit">Scopri il vincitore</button>
     </form>
     <div id="gameWinner"></div>

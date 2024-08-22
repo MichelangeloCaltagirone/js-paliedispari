@@ -10,3 +10,9 @@ span {
 h1 {
     margin-left: 0.5rem;
 }
+#userNumb {
+    margin: 0 10px;
+}
+label {
+    margin-left: 5px;
+}
