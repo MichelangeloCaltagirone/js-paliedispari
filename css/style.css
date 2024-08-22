@@ -4,3 +4,9 @@ form {
 span {
     margin-left: 1rem;
 }
+#gameWinner, #gameInfo {
+    margin: 1rem 0 0 1rem;
+}
+h1 {
+    margin-left: 0.5rem;
+}

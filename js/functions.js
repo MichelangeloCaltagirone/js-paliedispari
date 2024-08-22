@@ -1,4 +1,4 @@
-// Palindrome
+// isPalindrome
 
 // Funzione che restituisce un valore Booleano per controllare se una parola è palindroma o meno
 
@@ -19,7 +19,8 @@ function isEven(num) {                           // 1 solo parametro, che sarà 
 }
 
 
-// Random Number
+
+// randomNumber
 
 // Funzione per generare un numero intero arrotondato casuale tra un min e max(compresi)
 
